@@ -30,34 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text(
-          "hello world",
-        ),
-      ),
-      body: Column(
-        children: [
-          Text(
-            "Hello world",
-            style: TextStyle(color: Colors.orange, fontSize: 20),
-          ),
-          ElevatedButton(onPressed: (){print("hello world");}, child: Text("Press me!!"), style: ElevatedButton.styleFrom(backgroundColor: Colors.red),)
-        ],
-      ),
-    );
-  }
-}
